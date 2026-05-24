@@ -107,8 +107,36 @@ function initCounters() {
 }
 
 
+/* ── FAQ accordion ────────────────────────────────────────────────────── */
+function initFaq() {
+  document.querySelectorAll('.faq__item').forEach(item => {
+    const btn  = item.querySelector('.faq__q');
+    const wrap = item.querySelector('.faq__a-wrap');
+
+    btn.addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+
+      // Close all
+      document.querySelectorAll('.faq__item.open').forEach(other => {
+        other.classList.remove('open');
+        other.querySelector('.faq__q').setAttribute('aria-expanded', 'false');
+        other.querySelector('.faq__a-wrap').style.maxHeight = '0';
+      });
+
+      // Open clicked (unless it was already open)
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+        wrap.style.maxHeight = wrap.scrollHeight + 'px';
+      }
+    });
+  });
+}
+
+
 /* ── Init ─────────────────────────────────────────────────────────────── */
 document.addEventListener('DOMContentLoaded', () => {
   initReveal();
   initCounters();
+  initFaq();
 });
