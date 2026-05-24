@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Choron LLC — Web Design for Growing Businesses</title>
+  <meta name="description" content="Choron LLC builds fast, professional websites for businesses that are ready to be found online. No jargon, no surprises — just results.">
+
+  <!-- STRIPE SETUP INSTRUCTIONS
+    1. Log in to dashboard.stripe.com
+    2. Go to "Payment Links" and create a payment link for each package
+    3. Replace the three placeholder URLs in the pricing section:
+       - YOUR_STRIPE_LINK_STARTER  (Starter $999)
+       - YOUR_STRIPE_LINK_GROWTH   (Growth $2,499)
+       - YOUR_STRIPE_LINK_PREMIUM  (Premium $4,999)
+  -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">Choron<span>.</span></a>
+      <ul class="nav__links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <a href="#pricing" class="btn btn--accent">Get a Quote</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__inner">
+      <div class="hero__content">
+        <span class="label">Web Design Agency</span>
+        <h1 class="hero__heading">Stop losing<br>customers to a<br><em>Google search.</em></h1>
+        <p class="hero__sub">Choron builds fast, professional websites for businesses that are ready to be found. No jargon, no surprises — just results.</p>
+        <div class="hero__actions">
+          <a href="#pricing" class="btn btn--accent btn--lg">View Packages</a>
+          <a href="#process" class="btn btn--ghost btn--lg">How It Works</a>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__card">
+          <div class="hero__card-header">
+            <span class="dot dot--red"></span>
+            <span class="dot dot--yellow"></span>
+            <span class="dot dot--green"></span>
+            <span class="hero__card-url">choron.co/your-business</span>
+          </div>
+          <div class="hero__card-content">
+            <div class="mock-nav"></div>
+            <div class="mock-hero-block">
+              <div class="mock-line mock-line--wide"></div>
+              <div class="mock-line mock-line--medium"></div>
+              <div class="mock-line mock-line--btn"></div>
+            </div>
+            <div class="mock-grid">
+              <div class="mock-card">
+                <div class="mock-card-icon"></div>
+                <div class="mock-line mock-line--short"></div>
+                <div class="mock-line mock-line--medium" style="margin-top:6px;opacity:.4"></div>
+              </div>
+              <div class="mock-card">
+                <div class="mock-card-icon"></div>
+                <div class="mock-line mock-line--short"></div>
+                <div class="mock-line mock-line--medium" style="margin-top:6px;opacity:.4"></div>
+              </div>
+              <div class="mock-card">
+                <div class="mock-card-icon"></div>
+                <div class="mock-line mock-line--short"></div>
+                <div class="mock-line mock-line--medium" style="margin-top:6px;opacity:.4"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero__badge">
+          <span class="hero__badge-num">100+</span>
+          <span class="hero__badge-text">Businesses<br>Launched</span>
+        </div>
+      </div>
+    </div>
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>Custom Design</span>
+        <span class="ticker__sep">·</span>
+        <span>SEO Optimized</span>
+        <span class="ticker__sep">·</span>
+        <span>Mobile First</span>
+        <span class="ticker__sep">·</span>
+        <span>Fast Delivery</span>
+        <span class="ticker__sep">·</span>
+        <span>Ongoing Support</span>
+        <span class="ticker__sep">·</span>
+        <span>Conversion Focused</span>
+        <span class="ticker__sep">·</span>
+        <span>Custom Design</span>
+        <span class="ticker__sep">·</span>
+        <span>SEO Optimized</span>
+        <span class="ticker__sep">·</span>
+        <span>Mobile First</span>
+        <span class="ticker__sep">·</span>
+        <span>Fast Delivery</span>
+        <span class="ticker__sep">·</span>
+        <span>Ongoing Support</span>
+        <span class="ticker__sep">·</span>
+        <span>Conversion Focused</span>
+        <span class="ticker__sep">·</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats__grid">
+        <div class="stat">
+          <div class="stat__num-wrap">
+            <span class="stat__num" data-count="100">0</span><span class="stat__suffix">+</span>
+          </div>
+          <p class="stat__label">Businesses Launched</p>
+        </div>
+        <div class="stat">
+          <div class="stat__num-wrap">
+            <span class="stat__num" data-count="98">0</span><span class="stat__suffix">%</span>
+          </div>
+          <p class="stat__label">Client Satisfaction</p>
+        </div>
+        <div class="stat">
+          <div class="stat__num-wrap">
+            <span class="stat__num" data-count="14">0</span><span class="stat__suffix"> days</span>
+          </div>
+          <p class="stat__label">Avg. Turnaround Time</p>
+        </div>
+        <div class="stat">
+          <div class="stat__num-wrap">
+            <span class="stat__num" data-count="3">0</span><span class="stat__suffix">x</span>
+          </div>
+          <p class="stat__label">Average Lead Increase</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">What We Do</span>
+        <h2 class="section-title">Everything your business<br>needs to win online.</h2>
+      </div>
+      <div class="services__grid">
+        <div class="service-card">
+          <div class="service-card__num">01</div>
+          <h3 class="service-card__title">Custom Web Design</h3>
+          <p class="service-card__desc">No templates. Every site is designed from scratch to match your brand and speak directly to your customers.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__num">02</div>
+          <h3 class="service-card__title">SEO Foundation</h3>
+          <p class="service-card__desc">We build every site with search engines in mind — fast load times, proper structure, and local SEO to get you found.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__num">03</div>
+          <h3 class="service-card__title">Mobile-First Development</h3>
+          <p class="service-card__desc">Over 60% of searches happen on mobile. Your site will look and perform perfectly on every screen size.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__num">04</div>
+          <h3 class="service-card__title">Conversion Focused</h3>
+          <p class="service-card__desc">A pretty site that doesn't convert is just a digital brochure. We design with your goals — calls, bookings, sales — at the center.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__num">05</div>
+          <h3 class="service-card__title">Content Writing</h3>
+          <p class="service-card__desc">We write clear, professional copy that explains what you do and why customers should choose you over the competition.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__num">06</div>
+          <h3 class="service-card__title">Ongoing Support</h3>
+          <p class="service-card__desc">Websites aren't set-and-forget. We offer maintenance, updates, and support to keep your site running long after launch.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process" id="process">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">How It Works</span>
+        <h2 class="section-title">From zero to launched<br>in four steps.</h2>
+      </div>
+      <div class="process__steps">
+        <div class="process__step">
+          <div class="process__step-num">01</div>
+          <div class="process__step-body">
+            <h3>Discovery Call</h3>
+            <p>A 30-minute call to understand your business, goals, and customers. No commitment required — just an honest conversation about what you need.</p>
+          </div>
+        </div>
+        <div class="process__step">
+          <div class="process__step-num">02</div>
+          <div class="process__step-body">
+            <h3>Design &amp; Build</h3>
+            <p>We handle design, development, copywriting, and image sourcing. You stay focused on running your business while we build yours online.</p>
+          </div>
+        </div>
+        <div class="process__step">
+          <div class="process__step-num">03</div>
+          <div class="process__step-body">
+            <h3>Review &amp; Revise</h3>
+            <p>You review the finished site and we refine together. We don't consider a project complete until you're fully satisfied with every page and detail.</p>
+          </div>
+        </div>
+        <div class="process__step">
+          <div class="process__step-num">04</div>
+          <div class="process__step-body">
+            <h3>Launch &amp; Grow</h3>
+            <p>We deploy to a fast, reliable host and hand over the keys — with full documentation and optional ongoing support to keep things running.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Plans</span>
+        <h2 class="section-title">Same service.<br>Two ways to pay.</h2>
+        <p class="section-sub">Both plans include everything — custom design, development, SEO, and ongoing support. Choose the payment structure that works for your business.</p>
+      </div>
+      <div class="pricing__grid pricing__grid--two">
+
+        <!-- Plan A -->
+        <div class="pricing-card">
+          <div class="pricing-card__top">
+            <span class="pricing-card__tier">Plan A</span>
+            <h3 class="pricing-card__name">Annual Commitment</h3>
+            <div class="pricing-card__price">
+              <span class="pricing-card__amount">$97</span>
+              <span class="pricing-card__period">/ month</span>
+            </div>
+            <p class="pricing-card__tagline">12-month commitment with a consistent monthly rate and no upfront cost.</p>
+          </div>
+          <ul class="pricing-card__features">
+            <li>$97.00/month + applicable tax</li>
+            <li>Due on the 1st of every month</li>
+            <li>12-month initial term</li>
+            <li>Auto-renews annually at same rate</li>
+            <li>1-week payment grace period</li>
+            <li>$19.99 late fee after grace period</li>
+            <li>30-day written notice to cancel</li>
+          </ul>
+          <a href="YOUR_STRIPE_LINK_PLAN_A" class="btn btn--outline btn--full" target="_blank" rel="noopener noreferrer">Choose Plan A</a>
+        </div>
+
+        <!-- Plan B -->
+        <div class="pricing-card pricing-card--featured">
+          <div class="pricing-card__badge">Best Long-Term Value</div>
+          <div class="pricing-card__top">
+            <span class="pricing-card__tier">Plan B</span>
+            <h3 class="pricing-card__name">Setup + Lifetime</h3>
+            <div class="pricing-card__price">
+              <span class="pricing-card__amount">$79</span>
+              <span class="pricing-card__period">/ month</span>
+            </div>
+            <p class="pricing-card__tagline">One-time $300 setup fee, then a lower monthly rate with no annual lock-in — ever.</p>
+          </div>
+          <ul class="pricing-card__features">
+            <li>$300.00 one-time setup fee</li>
+            <li>$79.00/month + applicable tax</li>
+            <li>Due on the 1st of every month</li>
+            <li>Month-to-month, no annual lock-in</li>
+            <li>Setup fee waived from year two onward</li>
+            <li>1-week payment grace period</li>
+            <li>$19.99 late fee after grace period</li>
+            <li>Cancel anytime with 30-day notice</li>
+          </ul>
+          <a href="YOUR_STRIPE_LINK_PLAN_B" class="btn btn--accent btn--full" target="_blank" rel="noopener noreferrer">Choose Plan B</a>
+        </div>
+
+      </div>
+      <p class="pricing__note">Not sure which plan fits? <a href="mailto:choronllc@gmail.com">Email us first.</a></p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">FAQ</span>
+        <h2 class="section-title">Common questions.</h2>
+        <p class="section-sub">Still have a question? <a href="mailto:choronllc@gmail.com">Email us directly.</a></p>
+      </div>
+      <div class="faq__grid">
+
+        <div class="faq__card">
+          <h3 class="faq__card-q">What's the difference between Plan A and Plan B?</h3>
+          <p class="faq__card-a">Both plans deliver the exact same service. The difference is financial. Plan A has no upfront cost and locks in at $97/month for 12 months. Plan B requires a one-time $300 setup fee but drops to $79/month with no annual commitment. If you plan to stay long-term, Plan B costs less from year two onward.</p>
+        </div>
+
+        <div class="faq__card">
+          <h3 class="faq__card-q">Do I need to provide content or images?</h3>
+          <p class="faq__card-a">No. We handle everything — copywriting, image sourcing, and layout. You'll answer a few questions about your business upfront so we understand your tone and customers, and we take it from there.</p>
+        </div>
+
+        <div class="faq__card">
+          <h3 class="faq__card-q">How long does it take to build my website?</h3>
+          <p class="faq__card-a">Most sites are completed within 10–14 business days from the time we receive your onboarding information. The timeline moves as fast as you do — quicker feedback means a faster launch.</p>
+        </div>
+
+        <div class="faq__card">
+          <h3 class="faq__card-q">What if I'm not happy with the design?</h3>
+          <p class="faq__card-a">We revise until you're satisfied. We don't consider a project closed until you've approved it. There's no limit to how many times we can refine — your sign-off is the only milestone that matters.</p>
+        </div>
+
+        <div class="faq__card">
+          <h3 class="faq__card-q">Will my website show up on Google?</h3>
+          <p class="faq__card-a">Every site we build includes foundational SEO — proper page structure, meta tags, fast load times, and local SEO setup. Getting to the top of search results takes time, but you'll be indexed and visible from day one.</p>
+        </div>
+
+        <div class="faq__card">
+          <h3 class="faq__card-q">Can I cancel my plan?</h3>
+          <p class="faq__card-a">Plan B can be cancelled at any time with 30 days' written notice before the next billing cycle. Plan A requires 30 days' written notice before the annual renewal date. If a payment is missed, a one-week grace period applies before a $19.99 late fee is added.</p>
+        </div>
+
+        <div class="faq__card">
+          <h3 class="faq__card-q">What happens after my site launches?</h3>
+          <p class="faq__card-a">Your monthly plan covers ongoing support, updates, and maintenance. Your site stays live and we remain available to make changes as your business evolves — no one-off fees for standard updates.</p>
+        </div>
+
+        <div class="faq__card">
+          <h3 class="faq__card-q">Who owns the website?</h3>
+          <p class="faq__card-a">Choron manages and hosts your site as part of your active subscription. Your content, branding, and design are yours — and you'll have access to the deployment dashboard to view your site's status at any time. As long as your plan is active, your site stays live and fully maintained by us.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#" class="nav__logo">Choron<span>.</span></a>
+          <p>Web design for businesses that are ready to grow.</p>
+        </div>
+        <div class="footer__cols">
+          <div class="footer__col">
+            <span class="footer__col-title">Company</span>
+            <a href="#services">Services</a>
+            <a href="#process">Process</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#faq">FAQ</a>
+          </div>
+          <div class="footer__col">
+            <span class="footer__col-title">Plans</span>
+            <a href="#pricing">Plan A — $97/month</a>
+            <a href="#pricing">Plan B — $79/month</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Choron LLC. All rights reserved.</span>
+        <div class="footer__legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
