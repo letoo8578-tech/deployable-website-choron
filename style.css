@@ -347,7 +347,7 @@ button { font-family: inherit; }
   white-space: nowrap;
 }
 .ticker__sep { color: var(--accent); }
-@keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-25%); } }
 
 /* ---------- STATS ---------- */
 .stats {
